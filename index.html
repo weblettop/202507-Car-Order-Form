@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car order form 202507</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="main">
+      <h1>Home work for CSS flexbox</h1>
+      <article>
+        <form class="feedback-form">
+          <div class="feedback-form-block">
+            <fieldset class="section info">
+              <legend class="title">Personal info</legend>
+              <div>
+                <label for="name">First Name</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div>
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name" required />
+              </div>
+              <div>
+                <label for="date-birthday">Birthday</label>
+                <input
+                  type="date"
+                  id="date-birthday"
+                  name="date-birthday"
+                  required
+                />
+              </div>
+              <div class="gender">
+                Gender
+                <div>
+                  <label for="gender-male">Male</label>
+                  <input
+                    type="radio"
+                    id="gender-male"
+                    name="gender-client"
+                    required
+                  />
+
+                  <label for="gender-remale">Female</label>
+                  <input
+                    type="radio"
+                    id="gender-remale"
+                    name="gender-client"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label for="experience">Drive experience</label>
+                <select id="experience" name="experience">
+                  <option value="1">---</option>
+                  <option value="2">expert</option>
+                  <option value="3">more than 10</option>
+                  <option value="3">5-10</option>
+                  <option value="3">2-5</option>
+                </select>
+              </div>
+            </fieldset>
+
+            <fieldset class="section contacts">
+              <legend class="title">Contacts</legend>
+
+              <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required />
+              </div>
+              <div>
+                <label for="adress">Adress</label>
+                <textarea
+                  id="adress"
+                  name="adress"
+                  rows="2"
+                  required
+                ></textarea>
+              </div>
+            </fieldset>
+            <fieldset class="section car-info">
+              <legend class="title">Car info</legend>
+              <div class="title-info">
+                <label for="brand">Brand</label>
+                <select id="brand" name="brand">
+                  <option value="ford">---</option>
+                  <option value="ford">Ford</option>
+                  <option value="toyora">Toyota</option>
+                  <option value="bmw">BMW</option>
+                </select>
+              </div>
+              <div class="title-info">
+                <label for="model-ford">Model</label>
+                <select id="model-ford" name="model">
+                  <option value="superVan">---</option>
+                  <option value="superVan">SuperVan 4.2</option>
+                  <option value="explorer">Ford Explorer</option>
+                </select>
+              </div>
+              <div>
+                <label for="used">Used</label>
+                <input type="checkbox" id="used" name="used" required />
+              </div>
+
+              <div>
+                <div class="gen-title">Color</div>
+                <div>
+                  <input type="radio" id="red" name="color-car" required />
+                  <label for="red">Red</label>
+
+                  <input type="radio" id="black" name="color-car" required />
+                  <label for="black">Black</label>
+                  <input type="radio" id="blue" name="color-car" required />
+                  <label for="blue">Blue</label>
+                  <input type="radio" id="white" name="color-car" required />
+                  <label for="white">White</label>
+                  <input type="radio" id="grey" name="color-car" required />
+                  <label for="grey">Grey</label>
+                </div>
+                <div class="prise-title">
+                  <label for="price">Price</label>
+                  <input
+                    type="range"
+                    id="price"
+                    name="price"
+                    min="10"
+                    max="80"
+                    value="50"
+                    
+                  />
+                  <datalist id="values">
+                    <option value="10" label="10"></option>
+                    <option value="20" label="20"></option>
+                    <option value="30" label="30"></option>
+                    <option value="40" label="40"></option>
+                    <option value="50" label="50"></option>
+                    <option value="60" label="60"></option>
+                    <option value="70" label="70"></option>
+                    <option value="80" label="80"></option>
+                  </datalist>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+          <div class="feedback-form-btn">
+            <button type="button" class="btn">Cansel</button>
+            <button type="button" class="btn">Ok</button>
+          </div>
+        </form>
+      </article>
+    </main>
+  </body>
+</html>

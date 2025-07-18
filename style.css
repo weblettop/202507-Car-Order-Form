@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  line-height: 1.6;
+  font-size: 20px;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.feedback-form-block {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+
+  gap: 5px;
+  margin: 20px;
+}
+fieldset > div {
+  margin: 10px;
+}
+.title {
+  margin-left: 20px;
+  padding: 5px;
+  font-size: 24px;
+}
+.gender {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 35px;
+}
+#date-birthday {
+  margin-left: 16px;
+}
+.title-info {
+  display: flex;
+  justify-content: space-between;
+}
+.title-info select {
+  width: 60%;
+}
+#used {
+  margin-left: 40px;
+}
+.prise-title {
+  display: flex;
+  flex-direction: column;
+}
+#price {
+  width: 60%;
+}
+datalist {
+  display: flex;
+  justify-content: space-between;
+  writing-mode: horizontal-tb;
+  width: 60%;
+}
+option {
+  position: relative;
+  padding-top: 10px;
+  padding-left: 4px;
+  width: 10px;
+  font-size: 14px;
+}
+option::after {
+  content: '';
+  display: initial;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  width: 2px;
+  height: 5px;
+  margin: 0 auto;
+  background: #757373;
+  z-index: -1;
+}
+.feedback-form-btn {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+.btn {
+  width: 120px;
+  padding: 5px 0;
+  border-radius: 6px;
+  color: #000;
+  font-size: 26px;
+}
